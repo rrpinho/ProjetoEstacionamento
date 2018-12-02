@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="author" content="Rafael Pinho">
     <title>Estacionamento 24 horas - Entre em contato</title>
 
@@ -14,25 +14,28 @@
         <link rel="canonical" href="https://localhost:8000">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
     -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
 </head>
 <body>
 
     <header>
         <img src="static/img/logo.png" alt="Estacionamento 24 horas - Logo" width="100" height="100">
-        <p id="logo"> Seja bem vindo ao Estacionamento 24 horas</p>
-        <p>Franquia de estacionamento espalhadas por todas as capitais do Brasil</p>    
-    </header>
+        
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="planos.html">Planos</a></li>
+                <li><a href="contatos.html">Contatos</a></li>
+            </ul>
+        </nav>
 
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="serviços.html">Serviços</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="planos.html">Planos</a></li>
-            <li><a href="contatos.html">Contatos</a></li>
-        </ul>
-    </nav>
+        <p id="slogan"> Seja bem vindo ao Estacionamento 24 horas</p>
+    </header>
 
     <main>
         <h1>Entre em contato conosco</h1>
@@ -42,6 +45,8 @@
             <form action="/contato/" method="POST">
                 <label for="nome">Nome</label>
                 <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui">
+
+                <br>
 
                 <label for="telefone">Telefone</label>
                 <input id="telefone" type="text" name="telefone" placeholder="Digite seu número de telefone aqui">
@@ -56,25 +61,27 @@
                 <label for="mensagem">Mensagem</label>
                 <textarea id="mensagem" rows="4" cols="50" placeholder="Digite sua mensagem aqui"></textarea>
             
+                <br>
+
                 <button type="submit">Enviar</button>
             </form>
         </section>
 
         <br>
 
-        <section>
-            <h3>Onde estamos</h3>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-            
-            <div id="image1">
-                <img src="static/img/placa.png" alt="Placa de Estacionamento" width="100">
+        <section id="informacoes">
+
+            <div class="detalhes">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>            
+        
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.37423787986!2d-38.49212108517758!3d-13.011823790829471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7160353e8d9640b%3A0x1845f72ff73193bb!2sIncubadora+de+Neg%C3%B3cios+-+UNIFACS!5e0!3m2!1spt-BR!2sbr!4v1543788854335" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
 
         </section>
     </main>
 
     <footer>
-        <nav>
+        <nav id="nav-footer">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="serviços.html">Serviços</a></li>
