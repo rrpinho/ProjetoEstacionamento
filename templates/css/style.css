@@ -1,4 +1,4 @@
-body {
+body, textarea {
     font-family: Helvetica, Arial;
     color: #36393c;
 }
@@ -27,20 +27,20 @@ a:hover {
 */
 #logo {
     float: left;
-    width: 40%;
-    height: 40%;
+    width: 20%;
+    height: 70%;
     display: block;
 }
 
 nav {
     float: right;
-    padding: 20px;
+    padding: 1.25em;
 }
 
 #menu-icon {
     display: hidden;
-    width: 50px;
-    height: 50px;
+    width: 3.125em;
+    height: 3.125em;
     background: url(../static/img/menu.png) center;
 }
 
@@ -54,15 +54,56 @@ li {
     padding: 10px;
 }
 
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 0.75em 1.25em;
+    margin: 0.5em 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0.25em;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #79bd9a;
+    border: none;
+    color: cornsilk;
+    padding: 0.9375em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+}
+
+.detalhes, .map, .planos {
+    border: 0.0625em solid #ccc;
+    padding: 1%;
+}
+
+.planos h3 {
+    padding-top: 0;
+    margin-top: 1%;
+}
+
+.planos {
+    margin-bottom: 5%;
+}
+
 footer {
     background-color: #3b8686;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 0.325em;
+    border-bottom: 0px;
     clear: both;
 }
 
-section h2 {
+footer section{
+    height: 0%;
+}
+
+section h3, section h2 {
+    padding-top: 1em;
     text-align: center;
 }
 /*MEDIA QUERY IPHONE 5+*/
@@ -74,9 +115,9 @@ section h2 {
     nav ul {
         display: none;
         position: absolute;
-        right: 20px;
-        top: 60px;
-        padding: 20px;
+        right: 1.25em;
+        top: 3.75em;
+        padding: 1.25em;
         background: #fff;
         width: 20%;
     }
@@ -84,7 +125,7 @@ section h2 {
     nav li {
         text-align: left;
         width: 100%;
-        padding: 10px 0px;
+        padding: 0.625em 0px;
         margin: 0px;
     }
 
@@ -96,15 +137,48 @@ section h2 {
         color: #3b8686;
     }
 
+    #gerais1, #gerais2, #gerais3 {
+        float: left;
+        width: 100%;
+    }
+    
+    #gerais2 img {
+        margin-left: 34%;
+        width: 6.25em;
+        height: 6.25em;
+    }
+
+    #image1 img, #image2 img, #image3 img{
+        float: left;
+        width: 8.25em;
+        height: 8.25em;
+        margin-bottom: 5%;
+        margin-left: 5%;
+    }
+
+    #image3 img {
+        margin-left: 28%;
+    }
+
     p {
         text-align: justify;
     }
 
+    .planos img {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 5%;
+    }
+
     .depoimentos {
-        box-shadow: 10px 10px 5px #888888;
-        border-radius: 5px;
+        box-shadow: 0.625em 0.625em 0.3125em #888888;
+        border-radius: 0.3125em;
         width: 95%;
-        padding: 10px;
+        padding: 0.625em;
+    }
+
+    .detalhes, .map {
+        margin-bottom: 5%;
     }
 
     nav#nav-footer {
@@ -116,9 +190,9 @@ section h2 {
     }
 
     #slogan {
-        margin-right: 10px;
+        margin-right: 0.625em;
         font-weight: bold;
-        letter-spacing: 4px;
+        letter-spacing: 0.25em;
     }
 }
 /*MEDIA QUERY IPAD*/
@@ -133,44 +207,96 @@ section h2 {
     }
 
     header {
-        height: 200px;
+        height: 12.5em;
+    }
+
+    main {
+        margin: 1%
     }
 
     section {
-        height: 250px;
+        height: 15.625em;
         clear: both;
     }
 
-    #prom1, #promo2 {
+    #promo1, #promo2 {
         width: 48%;
         float: left;
-        margin-left: 10px;
-        border: 1px solid #ccc;
+        margin-left: 0.625em;
+        border: 0.0625em solid #ccc;
     }
 
     #gerais1, #gerais2, #gerais3 {
         float: left;
-        width: 32%;
-        margin-left: 10px;
-        border: 1px solid #ccc;
-        height: 320px;
+        width: 31%;
+        margin-left: 1em;
+        border: 0.0625em solid #ccc;
     }
 
     #gerais2 img {
-        margin-left: 23%;
+        margin-left: -4%;
+        margin-top: 25%;
+        width: 16.25em;
+        height: 16.25em;
+    }
+
+    #image1 img, #image2 img, #image3 img{
+        float: left;
+        width: 40%;
+        height: 40%;
+        margin-left: 3.4em;
+        margin-bottom: 5%;
+    }
+
+    #image3 img {
+        margin-left: 14.5em;
     }
 
     .depoimentos {
-        box-shadow: 3px 3px 3px #888888;
-        border-radius: 5px;
-        width: 48.4%;
+        box-shadow: 0.1875em 0.1875em 0.1875em #888888;
+        border-radius: 0.3125em;
+        width: 47%;
         float: left;
-        margin: 0 0 15px 15px;
+        margin: 0 0 0.9375em 0.9375em;
     }
 
-    footer {
-        height: 200px;
-        clear: both;
+    .planos {
+        height: 16.875em;
+    }
+
+    .planos p {
+        float: left;
+        width: 65%;
+    }
+
+    #image4 img, #image5 img {
+        float: left;
+        width: 30%;
+        height: 30%;
+        margin-left: 5%;
+        margin-top: -7%;
+        margin-bottom: 1%;
+    }
+
+    .planos button {
+        float: right;
+    }
+
+    #contato {
+        height: 30em;
+    }
+
+    .detalhes, .map {
+        width: 47%;
+        float: left;
+        margin-top: 0.625em;
+        margin-bottom: 5%;
+    }
+
+    .map {
+        border: 0.0625em solid #ccc;
+        margin-left: 0.625em;
+        padding: 0;
     }
 
     .copyright {
@@ -178,15 +304,49 @@ section h2 {
     }
 
     #slogan {
-        margin-right: 10px;
+        margin-right: 0.625em;
         font-weight: bold;
-        letter-spacing: 7px;
+        letter-spacing: 0.4375em;
     }
 }
 /*MEDIA QUERY PC*/
 @media only screen and (min-width: 960px) {
     body {
-        width: 960px;
+        width: 61.25em;
+    }
+
+    #gerais2 img {
+        margin-left: 0%;
+        margin-top: 0%;
+        width: 18.75em;
+        height: 18.75em;
+    }
+
+    #image1 img, #image2 img, #image3 img{
+        float: left;
+        width: 30%;
+        height: 30%;
+        margin-left: 7em;
+    }
+
+    #image3 img {
+        margin-left: 20.9em;
+    }
+
+    .depoimentos {
+        width: 48.4%;
+    }
+
+    .planos {
+        height: 21.875em;
+    }
+
+    #image4 img, #image5 img {
+        margin-top: -4%;
+    }
+
+    #contato {
+        height: 30em;
     }
 
     #informacoes {
@@ -194,36 +354,19 @@ section h2 {
         width: 100%;
     }
 
-    input[type=text], textarea {
-        width: 100%;
-        padding: 12px 20px;
-        margin: 8px 0;
-        display: inline-block;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        box-sizing: border-box;
-    }
-
-    .button {
-        background-color: #79bd9a;
-        border: none;
-        color: cornsilk;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-    }
-
     .detalhes, .map {
-        width: 49.1%;
+        width: 48%;
         float: left;
-        border: 1px solid #ccc;
-        margin-top: 10px;
-        margin-bottom: 10px;
+        margin-top: 0.625em;
+        margin-bottom: 5%;
     }
 
     .map {
-        margin-left: 10px;
+        border: 0.0625em solid #ccc;
+        margin-left: 0.625em;
     }
+}
+
+#gerais2 {
+    border: none;
 }

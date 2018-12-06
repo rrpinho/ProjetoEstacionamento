@@ -21,7 +21,7 @@
 <body>
 
     <header>
-        <img src="static/img/logo.png" alt="Estacionamento 24 horas - Logo" width="100" height="100">
+        <img id="logo" src="static/img/logo.png" alt="Estacionamento 24 horas - Logo">
         
         <nav>
             <a href="#" id="menu-icon"></a>
@@ -37,11 +37,9 @@
         <p id="slogan"> Seja bem vindo ao Estacionamento 24 horas</p>
     </header>
 
-    <main>
-        <h1>Entre em contato conosco</h1>
-        
+    <main>        
         <section id="contato">
-            <h3>Fale com a gente</h3>
+            <h2>Entre em contato conosco</h2>
             <form action="/contato/" method="POST">
                 <label for="nome">Nome</label>
                 <input id="nome" type="text" name="nome" placeholder="Digite seu nome aqui">
