@@ -39,8 +39,8 @@ nav {
 
 #menu-icon {
     display: hidden;
-    width: 3.125em;
-    height: 3.125em;
+    width: 2.8em;
+    height: 2.8em;
     background: url(../static/img/menu.png) center;
 }
 
@@ -108,6 +108,10 @@ section h3, section h2 {
 }
 /*MEDIA QUERY IPHONE 5+*/
 @media only screen and (max-width: 480px) {
+    body {
+        margin-top: -1.1875em;
+    }
+
     #menu-icon {
         display:inline-block;
     }
@@ -197,6 +201,10 @@ section h3, section h2 {
 }
 /*MEDIA QUERY IPAD*/
 @media only screen and (min-width: 481px) {
+    body {
+        margin-top: -0.5625em;
+    }
+
     #menu-icon {
         display: hidden;
     }
@@ -313,6 +321,7 @@ section h3, section h2 {
 @media only screen and (min-width: 960px) {
     body {
         width: 61.25em;
+        margin-top: -0.625em;
     }
 
     #gerais2 img {
