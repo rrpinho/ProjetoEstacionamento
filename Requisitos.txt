@@ -1,0 +1,7 @@
+Controle Rotativo
+Controle Mensalista
+Entrada de veículos no Rotativo e calculo de tempo por hora
+Entrada e saíde de veículos no mensalista e cálculo por mês
+Emissão de ticket para os rotativos
+Emissão de recibo para os rotativos e mensalistas
+Relatório de Fluxo de caixa
